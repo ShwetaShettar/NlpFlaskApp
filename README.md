@@ -2,7 +2,15 @@
 # Overview
 
 Document similarity scoring Rest Api written in **flask** using **PyMongo** (python driver) for working with **Mongodb**.
+
 Comparing given test document with documents in the database to produce top 5 most similar documents.
+
+## Similarity Scoring Metric
+
+```
+Cosine similarity is calculated between word vectors of test document and respective word vectors of all other documents in the database after preprocessing(nltk) and weight normalizing using tf-idf(sklearn python).
+```
+
 
 ## Development Environment
 Bare Minimun requirements
