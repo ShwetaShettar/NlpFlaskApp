@@ -12,8 +12,9 @@ Cosine similarity is calculated between word vectors of test document and respec
 
 all other documents in the database after preprocessing(nltk) and weight normalizing using tf-idf(sklearn python).
 
-[Cosine Similarity further study](https://en.wikipedia.org/wiki/Cosine_similarity)
 ```
+
+[Cosine Similarity further Study ] (https://en.wikipedia.org/wiki/Cosine_similarity/)
 
 
 ## Development Environment
