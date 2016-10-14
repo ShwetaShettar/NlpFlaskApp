@@ -64,9 +64,17 @@ curl -X POST -H "Content-Type: application/json" -d '{ "author": "name", "descri
 curl -X POST -H "Content-Type: application/json" -d '{ "author": "name", "description":"document to be searched for similarity and then indexed in database" }' http:/localhost:5000/check_plagiarism/update_db
 ```
 
+##TODO
+
+```
+1.Use Celery(Asychronous task queue) to offload high resource consuming (document similarity scoring) task to be dealt by task queue (using messaging queue service like Redis,RabbitMQ) .
+2.Using doc2vec model(python Gensim) to calculate context based similarity score 
+3.train on large persistent dataset and use mongodump, mongorestore to populate data before first use and train again after sufficient data has been changed
+```
+
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/aditya-skeptic) for details on process for submitting pull requests.
+Please read [CONTRIBUTING.md](https://github.com/aditya-skeptic/NlpFlaskApp/blob/master/CONTRIBUTING.md/) for details on process for submitting pull requests.
 
 ## Author
 
