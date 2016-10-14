@@ -43,7 +43,7 @@ http://localhost:5000/add_document                - to add text document to data
 http://localhost:5000/check_plagiarism            - to check top 5 documents similar to test document passed as json 
 http://localhost:5000/check_plagiarism/update_db  - to check top 5 similar documents and then add the given test document
 ```
-
+## Usage
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{ "field1": "author", "description":"document to be indexed in database" }' http://localhost:5000/add_document
