@@ -1,7 +1,8 @@
 
 # Overview
 
-Document similarity scoring Rest Api written in **flask** using **PyMongo** (python driver) for working with **Mongodb**
+Document similarity scoring Rest Api written in **flask** using **PyMongo** (python driver) for working with **Mongodb**.
+Comparing given test document with documents in the database to produce top 5 most similar documents.
 
 ## Development Environment
 Bare Minimun requirements
