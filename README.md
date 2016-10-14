@@ -57,6 +57,7 @@ $ python run.py
 /check_plagiarism            - to check top 5 documents similar to test document passed as json 
 /check_plagiarism/update_db  - to check top 5 similar documents and then add the given test document
 ```
+
 ## Usage
 
 ```
@@ -65,6 +66,13 @@ curl -X POST -H "Content-Type: application/json" -d '{ "author": "name", "descri
 curl -X POST -H "Content-Type: application/json" -d '{ "author": "name", "description":"document to be **searched** for similarity in database" }' http://localhost:5000/check_plagiarism
 
 curl -X POST -H "Content-Type: application/json" -d '{ "author": "name", "description":"document to be searched for similarity and then indexed in database" }' http:/localhost:5000/check_plagiarism/update_db
+```
+
+## Json Input Structure
+
+```
+json must contain a 'description' key-value json object which contains the text to be stored/compared
+e.g { "<author>": "<name>", "description":"text_document"}.
 ```
 
 ##TODO
