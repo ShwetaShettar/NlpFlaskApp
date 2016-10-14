@@ -8,7 +8,9 @@ Comparing given test document with documents in the database to produce top 5 mo
 ## Similarity Scoring Metric
 
 ```
-Cosine similarity is calculated between word vectors of test document and respective word vectors of all other documents in the database after preprocessing(nltk) and weight normalizing using tf-idf(sklearn python).
+Cosine similarity is calculated between word vectors of test document and respective word vectors of 
+
+all other documents in the database after preprocessing(nltk) and weight normalizing using tf-idf(sklearn python).
 ```
 
 
