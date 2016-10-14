@@ -74,7 +74,7 @@ curl -X POST -H "Content-Type: application/json" -d '{ "author": "name", "descri
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/aditya-skeptic/NlpFlaskApp/blob/master/CONTRIBUTING.md/) for details on process for submitting pull requests.
+Please read [CONTRIBUTING.md] (https://github.com/aditya-skeptic/NlpFlaskApp/blob/master/CONTRIBUTING.md/) for details on process for submitting pull requests.
 
 ## Author
 
@@ -82,4 +82,4 @@ Please read [CONTRIBUTING.md](https://github.com/aditya-skeptic/NlpFlaskApp/blob
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/aditya-skeptic/NlpFlaskApp/blob/master/LICENSE) file for details
