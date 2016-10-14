@@ -34,7 +34,7 @@ $ pip install -r requirements.txt
 ## Running the App
 
 ```
-python run.py
+$ python run.py
 ```
 
 ## Rest Api Endpoints
