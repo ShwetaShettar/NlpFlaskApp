@@ -46,11 +46,11 @@ http://localhost:5000/check_plagiarism/update_db  - to check top 5 similar docum
 ## Usage
 
 ```
-curl -X POST -H "Content-Type: application/json" -d '{ "field1": "author", "description":"document to be indexed in database" }' http://localhost:5000/add_document
+curl -X POST -H "Content-Type: application/json" -d '{ "author": "name", "description":"document to be **indexed** in database" }' http://localhost:5000/add_document
 
-curl -X POST -H "Content-Type: application/json" -d '{ "field1": "author", "description":"document to be indexed in database" }' http://localhost:5000/check_plagiarism
+curl -X POST -H "Content-Type: application/json" -d '{ "author": "name", "description":"document to be **searched** for similarity in database" }' http://localhost:5000/check_plagiarism
 
-curl -X POST -H "Content-Type: application/json" -d '{ "field1": "author", "description":"document to be indexed in database" }' http:/localhost:5000/check_plagiarism/update_db
+curl -X POST -H "Content-Type: application/json" -d '{ "author": "name", "description":"document to be searched for similarity and then indexed in database" }' http:/localhost:5000/check_plagiarism/update_db
 ```
 
 ## Contributing
