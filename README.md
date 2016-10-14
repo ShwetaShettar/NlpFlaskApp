@@ -31,19 +31,27 @@ $ virtualenv NlpFlaskApp
 $ pip install -r requirements.txt
 ```
 
-### Running the App
+## Running the App
 
 ```
 python run.py
 ```
 
-### Rest Api Usage
-
+## Rest Api Endpoints
+```
+http://localhost:5000/add_document                - to add text document to database 
+http://localhost:5000/check_plagiarism            - to check top 5 documents similar to test document passed as json 
+http://localhost:5000/check_plagiarism/update_db  - to check top 5 similar documents and then add the given test document
 ```
 
+
 ```
+curl -X POST -H "Content-Type: application/json" -d '{ "field1": "author", "description":"document to be indexed in database" }' http://localhost:5000/add_document
 
+curl -X POST -H "Content-Type: application/json" -d '{ "field1": "author", "description":"document to be indexed in database" }' http://localhost:5000/check_plagiarism
 
+curl -X POST -H "Content-Type: application/json" -d '{ "field1": "author", "description":"document to be indexed in database" }' http:/localhost:5000/check_plagiarism/update_db
+```
 
 ## Contributing
 
