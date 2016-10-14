@@ -11,6 +11,8 @@ Comparing given test document with documents in the database to produce top 5 mo
 Cosine similarity is calculated between word vectors of test document and respective word vectors of 
 
 all other documents in the database after preprocessing(nltk) and weight normalizing using tf-idf(sklearn python).
+
+[Cosine Similarity further study](https://en.wikipedia.org/wiki/Cosine_similarity)
 ```
 
 
@@ -50,9 +52,9 @@ $ python run.py
 
 ## Rest Api Endpoints
 ```
-http://localhost:5000/add_document                - to add text document to database 
-http://localhost:5000/check_plagiarism            - to check top 5 documents similar to test document passed as json 
-http://localhost:5000/check_plagiarism/update_db  - to check top 5 similar documents and then add the given test document
+/add_document                - to add text document to database 
+/check_plagiarism            - to check top 5 documents similar to test document passed as json 
+/check_plagiarism/update_db  - to check top 5 similar documents and then add the given test document
 ```
 ## Usage
 
