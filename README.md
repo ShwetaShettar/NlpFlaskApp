@@ -14,7 +14,7 @@ all other documents in the database after preprocessing(nltk) and weight normali
 
 ```
 
-## [Cosine Similarity further Study ] (https://en.wikipedia.org/wiki/Cosine_similarity/)
+[Cosine Similarity further Study ] (https://en.wikipedia.org/wiki/Cosine_similarity/)
 
 
 ## Development Environment
